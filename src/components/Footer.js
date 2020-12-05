@@ -1,6 +1,7 @@
 import React from 'react';
 import config from '../../config';
-export default function Footer() {
+
+const Footer = () => {
   return (
     <footer id="footer">
       <ul className="icons">
@@ -16,11 +17,13 @@ export default function Footer() {
         })}
       </ul>
       <ul className="copyright">
-        <li>&copy; Spectral</li>
+        <li>&copy;{new Date().getFullYear()} Steve Helms</li>
         <li>
           Design: <a href="http://html5up.net">HTML5 UP</a>
         </li>
       </ul>
     </footer>
   );
-}
+};
+
+export default Footer;

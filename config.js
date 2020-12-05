@@ -1,34 +1,35 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Spectral', // <title>
+  siteTitle: 'Steve Helms', // <title>
   manifestName: 'Spectral',
-  manifestShortName: 'Landing', // max 12 characters
+  manifestShortName: 'SHelms', // max 12 characters
   manifestStartUrl: '/',
-  manifestBackgroundColor: '#663399',
-  manifestThemeColor: '#663399',
+  manifestBackgroundColor: '#6a8b9d',
+  manifestThemeColor: '#6a8b9d',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-spectral/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav Srivastava',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
+  pathPrefix: `/`, // This path is subpath of your hosting https://domain/portfolio
+  heading: 'Steve Helms',
+  subHeading:
+    'Follower of Jesus + Husband + Father + Missionary + Teacher + Student',
   // social
   socialLinks: [
     {
       style: 'brands',
-      icon: 'fa-github',
-      name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      icon: 'fa-linkedin',
+      name: 'Linkedin',
+      url: 'https://linkedin.com/in/stevenhelms',
     },
     {
       style: 'brands',
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
+      icon: 'fa-github',
+      name: 'Github',
+      url: 'https://github.com/stevenhelms',
     },
     {
       style: 'solid',
       icon: 'fa-envelope',
       name: 'Email',
-      url: 'mailto:test@example.com',
+      url: 'mailto:steve@shelms.dev',
     },
   ],
 };
