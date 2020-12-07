@@ -187,12 +187,12 @@ const IndexPage = () => (
             technology, feel free to connect with me.
           </p>
         </header>
-        <ul className="actions stacked">
-          {/* <li>
+        {/* <ul className="actions stacked">
+          <li>
             <a href="mailto:" className="button fit primary">
               Email Me
             </a>
-          </li> */}
+          </li>
           <li>
             <a
               href="https://bearstategym.practicebetter.io/#/5f55848c2a90290740425407/bookings"
@@ -201,7 +201,7 @@ const IndexPage = () => (
               Nutrition Schedule
             </a>
           </li>
-        </ul>
+</ul> */}
       </div>
     </section>
   </Layout>
