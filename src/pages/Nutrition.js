@@ -1,4 +1,5 @@
 import React from 'react';
+import { PopupText, PopupWidget } from 'react-calendly';
 
 import Layout from '../components/Layout';
 
@@ -10,6 +11,26 @@ import pic3 from '../assets/images/2020-BearState-Headshot1-750x530-min.jpg';
 import pn1 from '../assets/images/pn1-coach-blue.png';
 import config from '../../config';
 
+const calendlyStyles = {
+  // backgroundColor: 'rgba(144, 144, 144, 0.25)',
+  backgroundColor: 'transparent',
+  width: '100%',
+  borderBottomColor: 'transparent',
+  borderRadius: '3px',
+  transition: 'background-color 0.2s ease-in-out, color 0.2s ease-in-out',
+  textTransform: 'uppercase',
+  padding: '0 2.75em',
+  display: 'inline-block',
+  maxWidth: '30em',
+  fontSize: '0.8em',
+  fontWeight: '600',
+  boxShadow: 'inset 0 0 0 2px #fff',
+  whiteSpace: 'nowrap',
+  textOverflow: 'ellipsis',
+  lineHeight: '3.125em',
+  letterSpacing: '0.225em',
+};
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -18,12 +39,17 @@ const IndexPage = () => (
         <p>Be the Best for your Family!</p>
         <ul className="actions special">
           <li>
-            <a
+            {/* <a
               href="https://calendly.com/bearstatenutrition"
-              className="button"
+              className="button fit"
             >
-              Schedule a Free Call
-            </a>
+              Schedule a Free Intro
+            </a> */}
+            <PopupText
+              url="https://calendly.com/bearstatenutrition"
+              text="Schedule a Free Intro"
+              styles={calendlyStyles}
+            />
           </li>
         </ul>
       </div>
@@ -147,17 +173,23 @@ const IndexPage = () => (
             we'll get started.
           </p>
         </header>
-        <section className="actions special features">
-          <div className="row">
-            <a
-              href="https://calendly.com/bearstatenutrition"
-              className="button fit"
-            >
-              Schedule a Free Call
-            </a>
+        <section
+          className="actions special features"
+          style={{ border: 'none' }}
+        >
+          <div>
+            <PopupText
+              url="https://calendly.com/bearstatenutrition"
+              text="Schedule a Free Intro"
+              styles={calendlyStyles}
+            />
           </div>
         </section>
       </div>
+      <PopupWidget
+        url="https://calendly.com/bearstatenutrition"
+        text="Schedule a Free Intro"
+      />
     </section>
   </Layout>
 );
