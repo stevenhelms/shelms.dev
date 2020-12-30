@@ -9,7 +9,7 @@ import pic1 from '../assets/images/hut-tree-min.jpg';
 import pic2 from '../assets/images/chairs-beach-min.jpg';
 import pic3 from '../assets/images/2020-BearState-Headshot1-750x530-min.jpg';
 import pn1 from '../assets/images/pn1-coach-blue.png';
-import config from '../../config';
+// import config from '../../config';
 
 const calendlyStyles = {
   // backgroundColor: 'rgba(144, 144, 144, 0.25)',
