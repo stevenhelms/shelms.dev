@@ -40,13 +40,13 @@ const IndexPage = () => (
         <ul className="actions special">
           <li>
             {/* <a
-              href="https://calendly.com/bearstatenutrition"
+              href="https://calendly.com/brickbybricknutrition"
               className="button fit"
             >
               Schedule a Free Intro
             </a> */}
             <PopupText
-              url="https://calendly.com/bearstatenutrition"
+              url="https://calendly.com/brickbybricknutrition"
               text="Schedule a Free Intro"
               styles={calendlyStyles}
             />
@@ -179,7 +179,7 @@ const IndexPage = () => (
         >
           <div>
             <PopupText
-              url="https://calendly.com/bearstatenutrition"
+              url="https://calendly.com/brickbybricknutrition"
               text="Schedule a Free Intro"
               styles={calendlyStyles}
             />
@@ -187,7 +187,7 @@ const IndexPage = () => (
         </section>
       </div>
       <PopupWidget
-        url="https://calendly.com/bearstatenutrition"
+        url="https://calendly.com/brickbybricknutrition"
         text="Schedule a Free Intro"
       />
     </section>
