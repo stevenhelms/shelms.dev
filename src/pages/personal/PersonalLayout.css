@@ -1524,7 +1524,7 @@ header.major h4,
 header.major h5,
 header.major h6 {
   border-bottom: solid 2px #fff;
-  display: inline-block;
+  display: block;
   padding-bottom: 1em;
   position: relative;
 }
