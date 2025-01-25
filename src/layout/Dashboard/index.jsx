@@ -19,7 +19,7 @@ import { handlerDrawerOpen, useGetMenuMaster } from 'api/menu';
 
 export default function DashboardLayout() {
   const { menuMasterLoading } = useGetMenuMaster();
-  const downXL = useMediaQuery((theme) => theme.breakpoints.down('xl'));
+  const downXL = useMediaQuery(theme => theme.breakpoints.down('xl'));
 
   useEffect(() => {
     handlerDrawerOpen(!downXL);

@@ -68,7 +68,7 @@ export default function ReportAreaChart() {
   const [options, setOptions] = useState(areaChartOptions);
 
   useEffect(() => {
-    setOptions((prevState) => ({
+    setOptions(prevState => ({
       ...prevState,
       colors: [theme.palette.warning.main],
       xaxis: {

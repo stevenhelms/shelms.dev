@@ -19,7 +19,7 @@ export default function Theme(colors) {
     A200: grey[12],
     A400: grey[13],
     A700: grey[14],
-    A800: grey[16],
+    A800: grey[16]
   };
   const contrastText = '#fff';
 
@@ -35,7 +35,7 @@ export default function Theme(colors) {
       700: blue[7],
       darker: blue[8],
       900: blue[9],
-      contrastText,
+      contrastText
     },
     secondary: {
       lighter: greyColors[100],
@@ -51,7 +51,7 @@ export default function Theme(colors) {
       A100: greyColors[0],
       A200: greyColors.A400,
       A300: greyColors.A700,
-      contrastText: greyColors[0],
+      contrastText: greyColors[0]
     },
     error: {
       lighter: red[0],
@@ -59,7 +59,7 @@ export default function Theme(colors) {
       main: red[4],
       dark: red[7],
       darker: red[9],
-      contrastText,
+      contrastText
     },
     warning: {
       lighter: gold[0],
@@ -67,7 +67,7 @@ export default function Theme(colors) {
       main: gold[5],
       dark: gold[7],
       darker: gold[9],
-      contrastText: greyColors[100],
+      contrastText: greyColors[100]
     },
     info: {
       lighter: cyan[0],
@@ -75,7 +75,7 @@ export default function Theme(colors) {
       main: cyan[5],
       dark: cyan[7],
       darker: cyan[9],
-      contrastText,
+      contrastText
     },
     success: {
       lighter: green[0],
@@ -83,37 +83,37 @@ export default function Theme(colors) {
       main: green[5],
       dark: green[7],
       darker: green[9],
-      contrastText,
+      contrastText
     },
     grey: greyColors,
 
     banner: {
       textAlign: 'center',
       padding: '50px 0',
-      backgroundColor: '#f5f5f5',
+      backgroundColor: '#f5f5f5'
     },
     inner: {
       maxWidth: '800px',
-      margin: '0 auto',
+      margin: '0 auto'
     },
     actions: {
       listStyle: 'none',
       padding: 0,
       display: 'flex',
-      justifyContent: 'center',
+      justifyContent: 'center'
     },
     button: {
       textDecoration: 'none',
       color: '#fff',
       backgroundColor: '#007bff',
       padding: '10px 20px',
-      borderRadius: '5px',
+      borderRadius: '5px'
     },
     more: {
       display: 'inline-block',
       marginTop: '20px',
       textDecoration: 'none',
-      color: '#007bff',
+      color: '#007bff'
     },
     h2: {
       transform: 'scale(1)',
@@ -133,18 +133,18 @@ export default function Theme(colors) {
         display: 'block',
         height: '2px',
         position: 'absolute',
-        width: '100%',
+        width: '100%'
       },
 
       '&:before': {
         top: 0,
-        left: 0,
+        left: 0
       },
 
       '&:after': {
         bottom: 0,
-        right: 0,
-      },
-    },
+        right: 0
+      }
+    }
   };
 }

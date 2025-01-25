@@ -105,7 +105,7 @@ export default function SalesChart() {
 
   const [series, setSeries] = useState(initialSeries);
 
-  const handleLegendChange = (event) => {
+  const handleLegendChange = event => {
     setLegend({ ...legend, [event.target.name]: event.target.checked });
   };
 
@@ -135,7 +135,7 @@ export default function SalesChart() {
   }, [income, cos]);
 
   useEffect(() => {
-    setOptions((prevState) => ({
+    setOptions(prevState => ({
       ...prevState,
       colors: !(income && cos) && cos ? [primaryMain] : [warning, primaryMain],
       xaxis: {

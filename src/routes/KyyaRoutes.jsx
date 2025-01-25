@@ -14,13 +14,13 @@ const KyyaRoutes = {
   children: [
     {
       path: '/kyya',
-      element: <Chocolate />,
+      element: <Chocolate />
     },
     {
       path: 'chocolate',
-      element: <Chocolate />,
-    },
-  ],
+      element: <Chocolate />
+    }
+  ]
 };
 
 export default KyyaRoutes;

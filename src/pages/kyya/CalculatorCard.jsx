@@ -4,17 +4,13 @@ import { Box, Button, TextField } from '@mui/material';
 import Typography from '@mui/material/Typography';
 
 import MainCard from 'components/MainCard';
-import { set } from 'lodash';
 
 const Calculator = () => {
   const [nib, setNib] = useState(0);
   const [sugar, setSugar] = useState(0);
   const [cocoa, setCocoa] = useState(0);
-  const [vanilla, setVanilla] = useState(0);
-  const [salt, setSalt] = useState(0);
   const [percent, setPercent] = useState(50);
   const [weight, setWeight] = useState(80);
-  const [total, setTotal] = useState(0);
 
   const handleSubmit = event => {
     event.preventDefault(); // Prevent default form submission
@@ -64,7 +60,7 @@ const Calculator = () => {
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'center',
-          justifyContent: 'space-evenly',
+          justifyContent: 'space-evenly'
         }}
       >
         <TextField
@@ -94,7 +90,7 @@ const Calculator = () => {
           flexDirection: 'row',
           justifyContent: 'space-between',
           alignItems: 'center',
-          pt: 5,
+          pt: 5
         }}
       >
         <TextField

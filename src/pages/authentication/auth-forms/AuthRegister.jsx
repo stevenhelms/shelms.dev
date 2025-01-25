@@ -36,11 +36,11 @@ export default function AuthRegister() {
     setShowPassword(!showPassword);
   };
 
-  const handleMouseDownPassword = (event) => {
+  const handleMouseDownPassword = event => {
     event.preventDefault();
   };
 
-  const changePassword = (value) => {
+  const changePassword = value => {
     const temp = strengthIndicator(value);
     setLevel(strengthColor(temp));
   };
@@ -167,7 +167,7 @@ export default function AuthRegister() {
                     value={values.password}
                     name="password"
                     onBlur={handleBlur}
-                    onChange={(e) => {
+                    onChange={e => {
                       handleChange(e);
                       changePassword(e.target.value);
                     }}

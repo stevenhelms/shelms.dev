@@ -39,7 +39,7 @@ export default function IncomeAreaChart({ slot }) {
   const [options, setOptions] = useState(areaChartOptions);
 
   useEffect(() => {
-    setOptions((prevState) => ({
+    setOptions(prevState => ({
       ...prevState,
       colors: [theme.palette.primary.main, theme.palette.primary[700]],
       xaxis: {

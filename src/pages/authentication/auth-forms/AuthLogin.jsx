@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 
@@ -8,7 +7,7 @@ import Checkbox from '@mui/material/Checkbox';
 import Divider from '@mui/material/Divider';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormHelperText from '@mui/material/FormHelperText';
-import Grid from '@mui/material/Grid';
+import Grid2 from '@mui/material/Grid2';
 import Link from '@mui/material/Link';
 import InputAdornment from '@mui/material/InputAdornment';
 import IconButton from '@mui/material/IconButton';
@@ -31,7 +30,7 @@ import FirebaseSocial from './FirebaseSocial';
 
 // ============================|| JWT - LOGIN ||============================ //
 
-export default function AuthLogin({ isDemo = false }) {
+export default function AuthLogin() {
   const [checked, setChecked] = React.useState(false);
 
   const [showPassword, setShowPassword] = React.useState(false);
@@ -39,7 +38,7 @@ export default function AuthLogin({ isDemo = false }) {
     setShowPassword(!showPassword);
   };
 
-  const handleMouseDownPassword = (event) => {
+  const handleMouseDownPassword = event => {
     event.preventDefault();
   };
 
@@ -58,8 +57,8 @@ export default function AuthLogin({ isDemo = false }) {
       >
         {({ errors, handleBlur, handleChange, handleSubmit, isSubmitting, touched, values }) => (
           <form noValidate onSubmit={handleSubmit}>
-            <Grid container spacing={3}>
-              <Grid item xs={12}>
+            <Grid2 container spacing={3}>
+              <Grid2 item xs={12}>
                 <Stack spacing={1}>
                   <InputLabel htmlFor="email-login">Email Address</InputLabel>
                   <OutlinedInput
@@ -79,8 +78,8 @@ export default function AuthLogin({ isDemo = false }) {
                     {errors.email}
                   </FormHelperText>
                 )}
-              </Grid>
-              <Grid item xs={12}>
+              </Grid2>
+              <Grid2 item xs={12}>
                 <Stack spacing={1}>
                   <InputLabel htmlFor="password-login">Password</InputLabel>
                   <OutlinedInput
@@ -113,15 +112,15 @@ export default function AuthLogin({ isDemo = false }) {
                     {errors.password}
                   </FormHelperText>
                 )}
-              </Grid>
+              </Grid2>
 
-              <Grid item xs={12} sx={{ mt: -1 }}>
+              <Grid2 item xs={12} sx={{ mt: -1 }}>
                 <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={2}>
                   <FormControlLabel
                     control={
                       <Checkbox
                         checked={checked}
-                        onChange={(event) => setChecked(event.target.checked)}
+                        onChange={event => setChecked(event.target.checked)}
                         name="checked"
                         color="primary"
                         size="small"
@@ -133,33 +132,31 @@ export default function AuthLogin({ isDemo = false }) {
                     Forgot Password?
                   </Link>
                 </Stack>
-              </Grid>
+              </Grid2>
               {errors.submit && (
-                <Grid item xs={12}>
+                <Grid2 item xs={12}>
                   <FormHelperText error>{errors.submit}</FormHelperText>
-                </Grid>
+                </Grid2>
               )}
-              <Grid item xs={12}>
+              <Grid2 item xs={12}>
                 <AnimateButton>
                   <Button disableElevation disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained" color="primary">
                     Login
                   </Button>
                 </AnimateButton>
-              </Grid>
-              <Grid item xs={12}>
+              </Grid2>
+              <Grid2 item xs={12}>
                 <Divider>
                   <Typography variant="caption"> Login with</Typography>
                 </Divider>
-              </Grid>
-              <Grid item xs={12}>
+              </Grid2>
+              <Grid2 item xs={12}>
                 <FirebaseSocial />
-              </Grid>
-            </Grid>
+              </Grid2>
+            </Grid2>
           </form>
         )}
       </Formik>
     </>
   );
 }
-
-AuthLogin.propTypes = { isDemo: PropTypes.bool };

@@ -10,7 +10,7 @@ import Facebook from 'assets/images/icons/facebook.svg';
 // ==============================|| FIREBASE - SOCIAL BUTTON ||============================== //
 
 export default function FirebaseSocial() {
-  const downSM = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+  const downSM = useMediaQuery(theme => theme.breakpoints.down('sm'));
 
   // @ts-ignore
   const googleHandler = async () => {

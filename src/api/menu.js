@@ -38,7 +38,7 @@ export function handlerDrawerOpen(isDashboardDrawerOpened) {
 
   mutate(
     endpoints.key + endpoints.master,
-    (currentMenuMaster) => {
+    currentMenuMaster => {
       return { ...currentMenuMaster, isDashboardDrawerOpened };
     },
     false
@@ -50,7 +50,7 @@ export function handlerActiveItem(openedItem) {
 
   mutate(
     endpoints.key + endpoints.master,
-    (currentMenuMaster) => {
+    currentMenuMaster => {
       return { ...currentMenuMaster, openedItem };
     },
     false

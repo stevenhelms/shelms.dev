@@ -57,10 +57,10 @@ export default function Notification() {
   const [read, setRead] = useState(2);
   const [open, setOpen] = useState(false);
   const handleToggle = () => {
-    setOpen((prevOpen) => !prevOpen);
+    setOpen(prevOpen => !prevOpen);
   };
 
-  const handleClose = (event) => {
+  const handleClose = event => {
     if (anchorRef.current && anchorRef.current.contains(event.target)) {
       return;
     }

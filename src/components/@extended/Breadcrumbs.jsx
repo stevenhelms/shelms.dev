@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 // material-ui
-import Grid from '@mui/material/Grid';
+import Grid2 from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import MuiBreadcrumbs from '@mui/material/Breadcrumbs';
 
@@ -16,9 +16,9 @@ export default function Breadcrumbs({ navigation, title, ...others }) {
   const [item, setItem] = useState();
 
   // set active item state
-  const getCollapse = (menu) => {
+  const getCollapse = menu => {
     if (menu.children) {
-      menu.children.filter((collapse) => {
+      menu.children.filter(collapse => {
         if (collapse.type && collapse.type === 'collapse') {
           getCollapse(collapse);
         } else if (collapse.type && collapse.type === 'item') {
@@ -33,7 +33,7 @@ export default function Breadcrumbs({ navigation, title, ...others }) {
   };
 
   useEffect(() => {
-    navigation?.items?.map((menu) => {
+    navigation?.items?.map(menu => {
       if (menu.type && menu.type === 'group') {
         getCollapse(menu);
       }
@@ -73,8 +73,8 @@ export default function Breadcrumbs({ navigation, title, ...others }) {
     if (item.breadcrumbs !== false) {
       breadcrumbContent = (
         <MainCard border={false} sx={{ mb: 3, bgcolor: 'transparent' }} {...others} content={false}>
-          <Grid container direction="column" justifyContent="flex-start" alignItems="flex-start" spacing={1}>
-            <Grid item>
+          <Grid2 container direction="column" justifyContent="flex-start" alignItems="flex-start" spacing={1}>
+            <Grid2 item>
               <MuiBreadcrumbs aria-label="breadcrumb">
                 <Typography component={Link} to="/" color="textSecondary" variant="h6" sx={{ textDecoration: 'none' }}>
                   Home
@@ -82,13 +82,13 @@ export default function Breadcrumbs({ navigation, title, ...others }) {
                 {mainContent}
                 {itemContent}
               </MuiBreadcrumbs>
-            </Grid>
+            </Grid2>
             {title && (
-              <Grid item sx={{ mt: 2 }}>
+              <Grid2 item sx={{ mt: 2 }}>
                 <Typography variant="h5">{item.title}</Typography>
-              </Grid>
+              </Grid2>
             )}
-          </Grid>
+          </Grid2>
         </MainCard>
       );
     }
@@ -98,6 +98,7 @@ export default function Breadcrumbs({ navigation, title, ...others }) {
 }
 
 Breadcrumbs.propTypes = {
+  navigation: PropTypes.object,
   card: PropTypes.bool,
   custom: PropTypes.bool,
   divider: PropTypes.bool,

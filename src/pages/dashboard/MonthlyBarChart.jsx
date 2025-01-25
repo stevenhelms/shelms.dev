@@ -59,7 +59,7 @@ export default function MonthlyBarChart() {
   const [options, setOptions] = useState(barChartOptions);
 
   useEffect(() => {
-    setOptions((prevState) => ({
+    setOptions(prevState => ({
       ...prevState,
       colors: [info],
       xaxis: {
