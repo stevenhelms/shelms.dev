@@ -33,8 +33,8 @@ export default function AuthWrapper({ children }) {
               minHeight: {
                 xs: 'calc(100vh - 210px)',
                 sm: 'calc(100vh - 134px)',
-                md: 'calc(100vh - 112px)',
-              },
+                md: 'calc(100vh - 112px)'
+              }
             }}
           >
             <Grid item>

@@ -6,6 +6,7 @@ import Snapshot from './Snapshot';
 import Spotlight from './Spotlight';
 import Things from './Things';
 import Footer from './Footer';
+import StayInTouch from './StayInTouch';
 
 export default function PersonalLayout() {
   return (
@@ -14,6 +15,7 @@ export default function PersonalLayout() {
       <Snapshot />
       <Spotlight />
       <Things />
+      <StayInTouch />
       <Footer />
     </Box>
   );

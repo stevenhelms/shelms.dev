@@ -34,7 +34,7 @@ import avatar4 from 'assets/images/users/avatar-4.png';
 const avatarSX = {
   width: 36,
   height: 36,
-  fontSize: '1rem',
+  fontSize: '1rem'
 };
 
 // action style
@@ -44,7 +44,7 @@ const actionSX = {
   top: 'auto',
   right: 'auto',
   alignSelf: 'flex-start',
-  transform: 'none',
+  transform: 'none'
 };
 
 // ==============================|| DASHBOARD - DEFAULT ||============================== //
@@ -57,35 +57,16 @@ export default function DashboardDefault() {
         <Typography variant="h5">Dashboard</Typography>
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce
-          title="Total Page Views"
-          count="4,42,236"
-          percentage={59.3}
-          extra="35,000"
-        />
+        <AnalyticEcommerce title="Total Page Views" count="4,42,236" percentage={59.3} extra="35,000" />
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
         <AnalyticEcommerce title="Total Users" count="78,250" percentage={70.5} extra="8,900" />
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce
-          title="Total Order"
-          count="18,800"
-          percentage={27.4}
-          isLoss
-          color="warning"
-          extra="1,943"
-        />
+        <AnalyticEcommerce title="Total Order" count="18,800" percentage={27.4} isLoss color="warning" extra="1,943" />
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce
-          title="Total Sales"
-          count="$35,078"
-          percentage={27.4}
-          isLoss
-          color="warning"
-          extra="$20,395"
-        />
+        <AnalyticEcommerce title="Total Sales" count="$35,078" percentage={27.4} isLoss color="warning" extra="$20,395" />
       </Grid>
 
       <Grid item md={8} sx={{ display: { sm: 'none', md: 'block', lg: 'none' } }} />
@@ -172,8 +153,8 @@ export default function DashboardDefault() {
               '& .MuiListItemButton-root': {
                 py: 1.5,
                 '& .MuiAvatar-root': avatarSX,
-                '& .MuiListItemSecondaryAction-root': { ...actionSX, position: 'relative' },
-              },
+                '& .MuiListItemSecondaryAction-root': { ...actionSX, position: 'relative' }
+              }
             }}
           >
             <ListItemButton divider>
@@ -182,10 +163,7 @@ export default function DashboardDefault() {
                   <GiftOutlined />
                 </Avatar>
               </ListItemAvatar>
-              <ListItemText
-                primary={<Typography variant="subtitle1">Order #002434</Typography>}
-                secondary="Today, 2:00 AM"
-              />
+              <ListItemText primary={<Typography variant="subtitle1">Order #002434</Typography>} secondary="Today, 2:00 AM" />
               <ListItemSecondaryAction>
                 <Stack alignItems="flex-end">
                   <Typography variant="subtitle1" noWrap>
@@ -203,10 +181,7 @@ export default function DashboardDefault() {
                   <MessageOutlined />
                 </Avatar>
               </ListItemAvatar>
-              <ListItemText
-                primary={<Typography variant="subtitle1">Order #984947</Typography>}
-                secondary="5 August, 1:45 PM"
-              />
+              <ListItemText primary={<Typography variant="subtitle1">Order #984947</Typography>} secondary="5 August, 1:45 PM" />
               <ListItemSecondaryAction>
                 <Stack alignItems="flex-end">
                   <Typography variant="subtitle1" noWrap>
@@ -224,10 +199,7 @@ export default function DashboardDefault() {
                   <SettingOutlined />
                 </Avatar>
               </ListItemAvatar>
-              <ListItemText
-                primary={<Typography variant="subtitle1">Order #988784</Typography>}
-                secondary="7 hours ago"
-              />
+              <ListItemText primary={<Typography variant="subtitle1">Order #988784</Typography>} secondary="7 hours ago" />
               <ListItemSecondaryAction>
                 <Stack alignItems="flex-end">
                   <Typography variant="subtitle1" noWrap>

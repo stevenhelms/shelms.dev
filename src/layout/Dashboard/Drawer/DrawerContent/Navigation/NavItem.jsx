@@ -26,20 +26,14 @@ export default function NavItem({ item, level }) {
     itemTarget = '_blank';
   }
   let listItemProps = {
-    component: forwardRef((props, ref) => (
-      <Link ref={ref} {...props} to={item.url} target={itemTarget} />
-    )),
+    component: forwardRef((props, ref) => <Link ref={ref} {...props} to={item.url} target={itemTarget} />)
   };
   if (item?.external) {
     listItemProps = { component: 'a', href: item.url, target: itemTarget };
   }
 
   const Icon = item.icon;
-  const itemIcon = item.icon ? (
-    <Icon style={{ fontSize: drawerOpen ? '1rem' : '1.25rem' }} />
-  ) : (
-    false
-  );
+  const itemIcon = item.icon ? <Icon style={{ fontSize: drawerOpen ? '1rem' : '1.25rem' }} /> : false;
 
   const { pathname } = useLocation();
   const isSelected = !!matchPath({ path: item.url, end: false }, pathname) || openItem === item.id;
@@ -65,7 +59,7 @@ export default function NavItem({ item, level }) {
         py: !drawerOpen && level === 1 ? 1.25 : 1,
         ...(drawerOpen && {
           '&:hover': {
-            bgcolor: 'primary.lighter',
+            bgcolor: 'primary.lighter'
           },
           '&.Mui-selected': {
             bgcolor: 'primary.lighter',
@@ -73,21 +67,21 @@ export default function NavItem({ item, level }) {
             color: iconSelectedColor,
             '&:hover': {
               color: iconSelectedColor,
-              bgcolor: 'primary.lighter',
-            },
-          },
+              bgcolor: 'primary.lighter'
+            }
+          }
         }),
         ...(!drawerOpen && {
           '&:hover': {
-            bgcolor: 'transparent',
+            bgcolor: 'transparent'
           },
           '&.Mui-selected': {
             '&:hover': {
-              bgcolor: 'transparent',
+              bgcolor: 'transparent'
             },
-            bgcolor: 'transparent',
-          },
-        }),
+            bgcolor: 'transparent'
+          }
+        })
       }}
     >
       {itemIcon && (
@@ -102,16 +96,16 @@ export default function NavItem({ item, level }) {
               alignItems: 'center',
               justifyContent: 'center',
               '&:hover': {
-                bgcolor: 'secondary.lighter',
-              },
+                bgcolor: 'secondary.lighter'
+              }
             }),
             ...(!drawerOpen &&
               isSelected && {
                 bgcolor: 'primary.lighter',
                 '&:hover': {
-                  bgcolor: 'primary.lighter',
-                },
-              }),
+                  bgcolor: 'primary.lighter'
+                }
+              })
           }}
         >
           {itemIcon}

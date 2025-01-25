@@ -34,7 +34,7 @@ import SettingOutlined from '@ant-design/icons/SettingOutlined';
 const avatarSX = {
   width: 36,
   height: 36,
-  fontSize: '1rem',
+  fontSize: '1rem'
 };
 
 const actionSX = {
@@ -44,7 +44,7 @@ const actionSX = {
   right: 'auto',
   alignSelf: 'flex-start',
 
-  transform: 'none',
+  transform: 'none'
 };
 
 // ==============================|| HEADER CONTENT - NOTIFICATION ||============================== //
@@ -93,22 +93,17 @@ export default function Notification() {
         transition
         disablePortal
         popperOptions={{
-          modifiers: [{ name: 'offset', options: { offset: [matchesXs ? -5 : 0, 9] } }],
+          modifiers: [{ name: 'offset', options: { offset: [matchesXs ? -5 : 0, 9] } }]
         }}
       >
         {({ TransitionProps }) => (
-          <Transitions
-            type="grow"
-            position={matchesXs ? 'top' : 'top-right'}
-            in={open}
-            {...TransitionProps}
-          >
+          <Transitions type="grow" position={matchesXs ? 'top' : 'top-right'} in={open} {...TransitionProps}>
             <Paper
               sx={{
                 boxShadow: theme.customShadows.z1,
                 width: '100%',
                 minWidth: 285,
-                maxWidth: { xs: 285, md: 420 },
+                maxWidth: { xs: 285, md: 420 }
               }}
             >
               <ClickAwayListener onClickAway={handleClose}>
@@ -137,8 +132,8 @@ export default function Notification() {
                         py: 0.5,
                         '&.Mui-selected': { bgcolor: 'grey.50', color: 'text.primary' },
                         '& .MuiAvatar-root': avatarSX,
-                        '& .MuiListItemSecondaryAction-root': { ...actionSX, position: 'relative' },
-                      },
+                        '& .MuiListItemSecondaryAction-root': { ...actionSX, position: 'relative' }
+                      }
                     }}
                   >
                     <ListItemButton selected={read > 0}>
@@ -216,9 +211,7 @@ export default function Notification() {
                     <Divider />
                     <ListItemButton>
                       <ListItemAvatar>
-                        <Avatar sx={{ color: 'primary.main', bgcolor: 'primary.lighter' }}>
-                          C
-                        </Avatar>
+                        <Avatar sx={{ color: 'primary.main', bgcolor: 'primary.lighter' }}>C</Avatar>
                       </ListItemAvatar>
                       <ListItemText
                         primary={

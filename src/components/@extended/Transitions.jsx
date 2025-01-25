@@ -9,44 +9,41 @@ import Slide from '@mui/material/Slide';
 import Zoom from '@mui/material/Zoom';
 import Box from '@mui/material/Box';
 
-function transitions(
-  { children, position = 'top-left', type = 'grow', direction = 'up', ...others },
-  ref
-) {
+function transitions({ children, position = 'top-left', type = 'grow', direction = 'up', ...others }, ref) {
   let positionSX = {
-    transformOrigin: '0 0 0',
+    transformOrigin: '0 0 0'
   };
 
   switch (position) {
     case 'top-right':
       positionSX = {
-        transformOrigin: 'top right',
+        transformOrigin: 'top right'
       };
       break;
     case 'top':
       positionSX = {
-        transformOrigin: 'top',
+        transformOrigin: 'top'
       };
       break;
     case 'bottom-left':
       positionSX = {
-        transformOrigin: 'bottom left',
+        transformOrigin: 'bottom left'
       };
       break;
     case 'bottom-right':
       positionSX = {
-        transformOrigin: 'bottom right',
+        transformOrigin: 'bottom right'
       };
       break;
     case 'bottom':
       positionSX = {
-        transformOrigin: 'bottom',
+        transformOrigin: 'bottom'
       };
       break;
     case 'top-left':
     default:
       positionSX = {
-        transformOrigin: '0 0 0',
+        transformOrigin: '0 0 0'
       };
       break;
   }
@@ -59,7 +56,7 @@ function transitions(
           timeout={{
             appear: 0,
             enter: 150,
-            exit: 150,
+            exit: 150
           }}
         >
           <Box sx={positionSX}>{children}</Box>
@@ -78,7 +75,7 @@ function transitions(
           timeout={{
             appear: 0,
             enter: 300,
-            exit: 150,
+            exit: 150
           }}
         >
           <Box sx={positionSX}>{children}</Box>
@@ -91,7 +88,7 @@ function transitions(
           timeout={{
             appear: 0,
             enter: 150,
-            exit: 150,
+            exit: 150
           }}
           direction={direction}
         >
@@ -120,5 +117,5 @@ transitions.propTypes = {
   position: PropTypes.string,
   type: PropTypes.string,
   direction: PropTypes.oneOf(['up', 'right', 'left', 'down']),
-  others: PropTypes.any,
+  others: PropTypes.any
 };

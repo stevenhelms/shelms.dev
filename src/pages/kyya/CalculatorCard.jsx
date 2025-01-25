@@ -60,7 +60,7 @@ const Calculator = () => {
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'center',
-          justifyContent: 'space-evenly',
+          justifyContent: 'space-evenly'
         }}
       >
         <TextField
@@ -90,7 +90,7 @@ const Calculator = () => {
           flexDirection: 'row',
           justifyContent: 'space-between',
           alignItems: 'center',
-          pt: 5,
+          pt: 5
         }}
       >
         <TextField

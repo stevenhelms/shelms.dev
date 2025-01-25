@@ -31,21 +31,21 @@ export default function ThemeCustomization({ children }) {
           sm: 768,
           md: 1024,
           lg: 1266,
-          xl: 1440,
-        },
+          xl: 1440
+        }
       },
       direction: 'ltr',
       mixins: {
         toolbar: {
           minHeight: 60,
           paddingTop: 8,
-          paddingBottom: 8,
-        },
+          paddingBottom: 8
+        }
       },
       palette: theme.palette,
       customShadows: themeCustomShadows,
       typography: themeTypography,
-      personal: themePersonal.personal,
+      personal: themePersonal.personal
     }),
     [theme, themeTypography, themeCustomShadows, themePersonal]
   );
@@ -64,5 +64,5 @@ export default function ThemeCustomization({ children }) {
 }
 
 ThemeCustomization.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node
 };

@@ -188,46 +188,22 @@ export default function ComponentShadow() {
                   />
                 </Grid>
                 <Grid item xs={6} sm={4} md={3} lg={2}>
-                  <CustomShadowBox
-                    color={theme.palette.primary.main}
-                    shadow={theme.customShadows.primary}
-                    label="primary"
-                  />
+                  <CustomShadowBox color={theme.palette.primary.main} shadow={theme.customShadows.primary} label="primary" />
                 </Grid>
                 <Grid item xs={6} sm={4} md={3} lg={2}>
-                  <CustomShadowBox
-                    color={theme.palette.secondary.main}
-                    shadow={theme.customShadows.secondary}
-                    label="secondary"
-                  />
+                  <CustomShadowBox color={theme.palette.secondary.main} shadow={theme.customShadows.secondary} label="secondary" />
                 </Grid>
                 <Grid item xs={6} sm={4} md={3} lg={2}>
-                  <CustomShadowBox
-                    color={theme.palette.success.main}
-                    shadow={theme.customShadows.success}
-                    label="success"
-                  />
+                  <CustomShadowBox color={theme.palette.success.main} shadow={theme.customShadows.success} label="success" />
                 </Grid>
                 <Grid item xs={6} sm={4} md={3} lg={2}>
-                  <CustomShadowBox
-                    color={theme.palette.warning.main}
-                    shadow={theme.customShadows.warning}
-                    label="warning"
-                  />
+                  <CustomShadowBox color={theme.palette.warning.main} shadow={theme.customShadows.warning} label="warning" />
                 </Grid>
                 <Grid item xs={6} sm={4} md={3} lg={2}>
-                  <CustomShadowBox
-                    color={theme.palette.info.main}
-                    shadow={theme.customShadows.info}
-                    label="info"
-                  />
+                  <CustomShadowBox color={theme.palette.info.main} shadow={theme.customShadows.info} label="info" />
                 </Grid>
                 <Grid item xs={6} sm={4} md={3} lg={2}>
-                  <CustomShadowBox
-                    color={theme.palette.error.main}
-                    shadow={theme.customShadows.error}
-                    label="error"
-                  />
+                  <CustomShadowBox color={theme.palette.error.main} shadow={theme.customShadows.error} label="error" />
                 </Grid>
               </Grid>
             </MainCard>
@@ -244,5 +220,5 @@ CustomShadowBox.propTypes = {
   shadow: PropTypes.string,
   label: PropTypes.string,
   color: PropTypes.string,
-  bgcolor: PropTypes.string,
+  bgcolor: PropTypes.string
 };

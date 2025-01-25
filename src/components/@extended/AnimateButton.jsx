@@ -3,13 +3,7 @@ import PropTypes from 'prop-types';
 // third-party
 import { motion, useCycle } from 'framer-motion';
 
-export default function AnimateButton({
-  children,
-  type = 'scale',
-  direction = 'right',
-  offset = 10,
-  scale = { hover: 1.05, tap: 0.954 },
-}) {
+export default function AnimateButton({ children, type = 'scale', direction = 'right', offset = 10, scale = { hover: 1.05, tap: 0.954 } }) {
   let offset1;
   let offset2;
   switch (direction) {
@@ -38,7 +32,7 @@ export default function AnimateButton({
             repeat: Infinity,
             repeatType: 'loop',
             duration: 2,
-            repeatDelay: 0,
+            repeatDelay: 0
           }}
         >
           {children}
@@ -47,21 +41,13 @@ export default function AnimateButton({
     case 'slide':
       if (direction === 'up' || direction === 'down') {
         return (
-          <motion.div
-            animate={{ y: y !== undefined ? y : '' }}
-            onHoverEnd={() => cycleY()}
-            onHoverStart={() => cycleY()}
-          >
+          <motion.div animate={{ y: y !== undefined ? y : '' }} onHoverEnd={() => cycleY()} onHoverStart={() => cycleY()}>
             {children}
           </motion.div>
         );
       }
       return (
-        <motion.div
-          animate={{ x: x !== undefined ? x : '' }}
-          onHoverEnd={() => cycleX()}
-          onHoverStart={() => cycleX()}
-        >
+        <motion.div animate={{ x: x !== undefined ? x : '' }} onHoverEnd={() => cycleX()} onHoverStart={() => cycleX()}>
           {children}
         </motion.div>
       );
@@ -71,7 +57,7 @@ export default function AnimateButton({
       if (typeof scale === 'number') {
         scale = {
           hover: scale,
-          tap: scale,
+          tap: scale
         };
       }
       return (
@@ -87,5 +73,5 @@ AnimateButton.propTypes = {
   type: PropTypes.oneOf(['slide', 'scale', 'rotate']),
   direction: PropTypes.oneOf(['up', 'down', 'left', 'right']),
   offset: PropTypes.number,
-  scale: PropTypes.object,
+  scale: PropTypes.object
 };
