@@ -42,7 +42,11 @@ export default function Header() {
         edge="start"
         color="secondary"
         variant="light"
-        sx={{ color: 'text.primary', bgcolor: drawerOpen ? iconBackColorOpen : iconBackColor, ml: { xs: 0, lg: -2 } }}
+        sx={{
+          color: 'text.primary',
+          bgcolor: drawerOpen ? iconBackColorOpen : iconBackColor,
+          ml: { xs: 0, lg: -2 },
+        }}
       >
         {!drawerOpen ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
       </IconButton>
@@ -56,9 +60,9 @@ export default function Header() {
     color: 'inherit',
     elevation: 0,
     sx: {
-      borderBottom: `1px solid ${theme.palette.divider}`
+      borderBottom: `1px solid ${theme.palette.divider}`,
       // boxShadow: theme.customShadows.z1
-    }
+    },
   };
 
   return (

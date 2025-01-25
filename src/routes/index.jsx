@@ -9,7 +9,7 @@ import PersonalRoutes from './PersonalRoutes';
 // ==============================|| ROUTING RENDER ||============================== //
 
 const router = createBrowserRouter([MainRoutes, LoginRoutes, KyyaRoutes, PersonalRoutes], {
-  basename: import.meta.env.VITE_APP_BASE_NAME
+  basename: import.meta.env.VITE_APP_BASE_NAME,
 });
 
 export default router;

@@ -11,13 +11,13 @@ const PersonalRoutes = {
   children: [
     {
       path: '/',
-      element: <PersonalLayout />
+      element: <PersonalLayout />,
     },
     {
       path: 'p',
-      element: <PersonalLayout />
-    }
-  ]
+      element: <PersonalLayout />,
+    },
+  ],
 };
 
 export default PersonalRoutes;

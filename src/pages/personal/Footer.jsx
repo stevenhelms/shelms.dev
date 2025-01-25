@@ -6,20 +6,20 @@ const socialLinks = [
     style: 'brands',
     icon: <LinkedInIcon fontSize="large" />,
     name: 'Linkedin',
-    url: 'https://linkedin.com/in/stevenhelms'
+    url: 'https://linkedin.com/in/stevenhelms',
   },
   {
     style: 'brands',
     icon: <GitHubIcon fontSize="large" />,
     name: 'Github',
-    url: 'https://github.com/stevenhelms'
+    url: 'https://github.com/stevenhelms',
   },
   {
     style: 'solid',
     icon: <EmailIcon fontSize="large" />,
     name: 'Email',
-    url: 'mailto:steve@shelms.dev'
-  }
+    url: 'mailto:steve@shelms.dev',
+  },
 ];
 
 const Footer = () => {

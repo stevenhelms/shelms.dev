@@ -19,10 +19,15 @@ export default function Dot({ color, size, variant, sx }) {
         borderRadius: '50%',
         bgcolor: variant === 'outlined' ? '' : main,
         ...(variant === 'outlined' && { border: `1px solid ${main}` }),
-        ...sx
+        ...sx,
       }}
     />
   );
 }
 
-Dot.propTypes = { color: PropTypes.any, size: PropTypes.number, variant: PropTypes.string, sx: PropTypes.any };
+Dot.propTypes = {
+  color: PropTypes.any,
+  size: PropTypes.number,
+  variant: PropTypes.string,
+  sx: PropTypes.any,
+};

@@ -33,7 +33,13 @@ import avatar1 from 'assets/images/users/avatar-1.png';
 // tab panel wrapper
 function TabPanel({ children, value, index, ...other }) {
   return (
-    <div role="tabpanel" hidden={value !== index} id={`profile-tabpanel-${index}`} aria-labelledby={`profile-tab-${index}`} {...other}>
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`profile-tabpanel-${index}`}
+      aria-labelledby={`profile-tab-${index}`}
+      {...other}
+    >
       {value === index && children}
     </div>
   );
@@ -42,7 +48,7 @@ function TabPanel({ children, value, index, ...other }) {
 function a11yProps(index) {
   return {
     id: `profile-tab-${index}`,
-    'aria-controls': `profile-tabpanel-${index}`
+    'aria-controls': `profile-tabpanel-${index}`,
   };
 }
 
@@ -80,7 +86,10 @@ export default function Profile() {
           bgcolor: open ? iconBackColorOpen : 'transparent',
           borderRadius: 1,
           '&:hover': { bgcolor: 'secondary.lighter' },
-          '&:focus-visible': { outline: `2px solid ${theme.palette.secondary.dark}`, outlineOffset: 2 }
+          '&:focus-visible': {
+            outline: `2px solid ${theme.palette.secondary.dark}`,
+            outlineOffset: 2,
+          },
         }}
         aria-label="open profile"
         ref={anchorRef}
@@ -107,15 +116,22 @@ export default function Profile() {
             {
               name: 'offset',
               options: {
-                offset: [0, 9]
-              }
-            }
-          ]
+                offset: [0, 9],
+              },
+            },
+          ],
         }}
       >
         {({ TransitionProps }) => (
           <Transitions type="grow" position="top-right" in={open} {...TransitionProps}>
-            <Paper sx={{ boxShadow: theme.customShadows.z1, width: 290, minWidth: 240, maxWidth: { xs: 250, md: 290 } }}>
+            <Paper
+              sx={{
+                boxShadow: theme.customShadows.z1,
+                width: 290,
+                minWidth: 240,
+                maxWidth: { xs: 250, md: 290 },
+              }}
+            >
               <ClickAwayListener onClickAway={handleClose}>
                 <MainCard elevation={0} border={false} content={false}>
                   <CardContent sx={{ px: 2.5, pt: 3 }}>
@@ -142,14 +158,19 @@ export default function Profile() {
                   </CardContent>
 
                   <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                    <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="profile tabs">
+                    <Tabs
+                      variant="fullWidth"
+                      value={value}
+                      onChange={handleChange}
+                      aria-label="profile tabs"
+                    >
                       <Tab
                         sx={{
                           display: 'flex',
                           flexDirection: 'row',
                           justifyContent: 'center',
                           alignItems: 'center',
-                          textTransform: 'capitalize'
+                          textTransform: 'capitalize',
                         }}
                         icon={<UserOutlined style={{ marginBottom: 0, marginRight: '10px' }} />}
                         label="Profile"
@@ -161,7 +182,7 @@ export default function Profile() {
                           flexDirection: 'row',
                           justifyContent: 'center',
                           alignItems: 'center',
-                          textTransform: 'capitalize'
+                          textTransform: 'capitalize',
                         }}
                         icon={<SettingOutlined style={{ marginBottom: 0, marginRight: '10px' }} />}
                         label="Setting"
@@ -185,4 +206,9 @@ export default function Profile() {
   );
 }
 
-TabPanel.propTypes = { children: PropTypes.node, value: PropTypes.number, index: PropTypes.number, other: PropTypes.any };
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  value: PropTypes.number,
+  index: PropTypes.number,
+  other: PropTypes.any,
+};

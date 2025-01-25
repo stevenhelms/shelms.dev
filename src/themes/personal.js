@@ -16,37 +16,37 @@ export default function PersonalThemeOption(mode, presetColor) {
       mode,
       common: {
         black: '#000',
-        white: '#fff'
+        white: '#fff',
       },
       ...paletteColor,
       // Custom Styles for Personal Page Layout
       banner: {
         textAlign: 'center',
         padding: '50px 0',
-        backgroundColor: '#f5f5f5'
+        backgroundColor: '#f5f5f5',
       },
       inner: {
         maxWidth: '800px',
-        margin: '0 auto'
+        margin: '0 auto',
       },
       actions: {
         listStyle: 'none',
         padding: 0,
         display: 'flex',
-        justifyContent: 'center'
+        justifyContent: 'center',
       },
       button: {
         textDecoration: 'none',
         color: '#fff',
         backgroundColor: '#007bff',
         padding: '10px 20px',
-        borderRadius: '5px'
+        borderRadius: '5px',
       },
       more: {
         display: 'inline-block',
         marginTop: '20px',
         textDecoration: 'none',
-        color: '#007bff'
+        color: '#007bff',
       },
       h2: {
         transform: 'scale(1)',
@@ -65,19 +65,19 @@ export default function PersonalThemeOption(mode, presetColor) {
           display: 'block',
           height: '2px',
           position: 'absolute',
-          width: '100%'
+          width: '100%',
         },
 
         '&:before': {
           top: 0,
-          left: 0
+          left: 0,
         },
 
         '&:after': {
           bottom: 0,
-          right: 0
-        }
-      }
-    }
+          right: 0,
+        },
+      },
+    },
   });
 }

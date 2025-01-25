@@ -29,8 +29,9 @@ const Spotlight = () => {
         <div className="content">
           <h2>Belize</h2>
           <p>
-            I spent a month in Belize with my family in 2014 and grew to love the country during that time. We would love to have the
-            opportunity to move there and serve the people we live with.
+            I spent a month in Belize with my family in 2014 and grew to love the country during
+            that time. We would love to have the opportunity to move there and serve the people we
+            live with.
           </p>
         </div>
       </section>
@@ -41,11 +42,13 @@ const Spotlight = () => {
         <div className="content">
           <h2>Chef + Nutrition</h2>
           <p>
-            My own love of food lead me to being overweight, weighing in at 240lbs. I&apos;ve been on a long journey to master that
-            relationship. I now weigh in around leand and strong 145lbs, and have learned to cook and eat healthy foods. I&apos;ve learned
-            that food is not only fuel for the body but builds relationships and creates memories with friends and families. I strive to
-            help others see the health benefits of whole, minimally-processed foods so they can live a high quality life. I am now a
-            classically trained chef and a nutrition coach.
+            My own love of food lead me to being overweight, weighing in at 240lbs. I&apos;ve been
+            on a long journey to master that relationship. I now weigh in around leand and strong
+            145lbs, and have learned to cook and eat healthy foods. I&apos;ve learned that food is
+            not only fuel for the body but builds relationships and creates memories with friends
+            and families. I strive to help others see the health benefits of whole,
+            minimally-processed foods so they can live a high quality life. I am now a classically
+            trained chef and a nutrition coach.
           </p>
         </div>
       </section>
