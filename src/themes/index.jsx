@@ -10,6 +10,7 @@ import Palette from './palette';
 import Typography from './typography';
 import CustomShadows from './shadows';
 import componentsOverride from './overrides';
+import PersonalThemeOption from './personal';
 
 // ==============================|| DEFAULT THEME - MAIN  ||============================== //
 
@@ -20,6 +21,8 @@ export default function ThemeCustomization({ children }) {
   const themeTypography = Typography(`'Public Sans', sans-serif`);
   const themeCustomShadows = useMemo(() => CustomShadows(theme), [theme]);
 
+  const themePersonal = PersonalThemeOption('light', 'default');
+
   const themeOptions = useMemo(
     () => ({
       breakpoints: {
@@ -28,22 +31,23 @@ export default function ThemeCustomization({ children }) {
           sm: 768,
           md: 1024,
           lg: 1266,
-          xl: 1440
-        }
+          xl: 1440,
+        },
       },
       direction: 'ltr',
       mixins: {
         toolbar: {
           minHeight: 60,
           paddingTop: 8,
-          paddingBottom: 8
-        }
+          paddingBottom: 8,
+        },
       },
       palette: theme.palette,
       customShadows: themeCustomShadows,
-      typography: themeTypography
+      typography: themeTypography,
+      personal: themePersonal.personal,
     }),
-    [theme, themeTypography, themeCustomShadows]
+    [theme, themeTypography, themeCustomShadows, themePersonal]
   );
 
   const themes = createTheme(themeOptions);
@@ -60,5 +64,5 @@ export default function ThemeCustomization({ children }) {
 }
 
 ThemeCustomization.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };

@@ -23,12 +23,15 @@ export default function Palette(mode, presetColor) {
     '#595959',
     '#262626',
     '#141414',
-    '#000000'
+    '#000000',
   ];
   let greyAscent = ['#fafafa', '#bfbfbf', '#434343', '#1f1f1f'];
   let greyConstant = ['#fafafb', '#e6ebf1'];
 
   colors.grey = [...greyPrimary, ...greyAscent, ...greyConstant];
+
+  let accentPrimary = ['#6a8b9d', '#b9884f', '#00f0ff', '#76ddff', '#84835d', '#606777'];
+  colors.accent = accentPrimary;
 
   const paletteColor = ThemeOption(colors, presetColor, mode);
 
@@ -37,22 +40,22 @@ export default function Palette(mode, presetColor) {
       mode,
       common: {
         black: '#000',
-        white: '#fff'
+        white: '#fff',
       },
       ...paletteColor,
       text: {
         primary: paletteColor.grey[700],
         secondary: paletteColor.grey[500],
-        disabled: paletteColor.grey[400]
+        disabled: paletteColor.grey[400],
       },
       action: {
-        disabled: paletteColor.grey[300]
+        disabled: paletteColor.grey[300],
       },
       divider: paletteColor.grey[200],
       background: {
         paper: paletteColor.grey[0],
-        default: paletteColor.grey.A50
-      }
-    }
+        default: paletteColor.grey.A50,
+      },
+    },
   });
 }
