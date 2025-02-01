@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 // material-ui
-import Grid from '@mui/material/Grid';
+import Grid2 from '@mui/material/Grid2';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
@@ -14,19 +14,30 @@ import AuthRegister from './auth-forms/AuthRegister';
 export default function Register() {
   return (
     <AuthWrapper>
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Stack direction="row" justifyContent="space-between" alignItems="baseline" sx={{ mb: { xs: -0.5, sm: 0.5 } }}>
+      <Grid2 container spacing={3}>
+        <Grid2 item xs={12}>
+          <Stack
+            direction="row"
+            justifyContent="space-between"
+            alignItems="baseline"
+            sx={{ mb: { xs: -0.5, sm: 0.5 } }}
+          >
             <Typography variant="h3">Sign up</Typography>
-            <Typography component={Link} to="/login" variant="body1" sx={{ textDecoration: 'none' }} color="primary">
+            <Typography
+              component={Link}
+              to="/login"
+              variant="body1"
+              sx={{ textDecoration: 'none' }}
+              color="primary"
+            >
               Already have an account?
             </Typography>
           </Stack>
-        </Grid>
-        <Grid item xs={12}>
+        </Grid2>
+        <Grid2 item xs={12}>
           <AuthRegister />
-        </Grid>
-      </Grid>
+        </Grid2>
+      </Grid2>
     </AuthWrapper>
   );
 }

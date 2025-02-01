@@ -1,7 +1,7 @@
 // material-ui
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Divider from '@mui/material/Divider';
-import Grid from '@mui/material/Grid';
+import Grid2 from '@mui/material/Grid2';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
@@ -15,8 +15,8 @@ import ComponentSkeleton from './ComponentSkeleton';
 export default function ComponentTypography() {
   return (
     <ComponentSkeleton>
-      <Grid container spacing={3}>
-        <Grid item xs={12} lg={6}>
+      <Grid2 container spacing={3}>
+        <Grid2 item xs={12} lg={6}>
           <Stack spacing={3}>
             <MainCard title="Basic">
               <Stack spacing={0.75} sx={{ mt: -1.5 }}>
@@ -82,8 +82,8 @@ export default function ComponentTypography() {
             <MainCard title="Body 1">
               <>
                 <Typography variant="body1" gutterBottom>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </Typography>
                 <Breadcrumbs aria-label="breadcrumb">
                   <Typography variant="h6">Size: 14px</Typography>
@@ -95,8 +95,8 @@ export default function ComponentTypography() {
             <MainCard title="Body 2">
               <>
                 <Typography variant="body2" gutterBottom>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </Typography>
                 <Breadcrumbs aria-label="breadcrumb">
                   <Typography variant="h6">Size: 12px</Typography>
@@ -108,8 +108,8 @@ export default function ComponentTypography() {
             <MainCard title="Subtitle 1">
               <>
                 <Typography variant="subtitle1" gutterBottom>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </Typography>
                 <Breadcrumbs aria-label="breadcrumb">
                   <Typography variant="h6">Size: 14px</Typography>
@@ -121,8 +121,8 @@ export default function ComponentTypography() {
             <MainCard title="Subtitle 2">
               <>
                 <Typography variant="subtitle2" gutterBottom>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </Typography>
                 <Breadcrumbs aria-label="breadcrumb">
                   <Typography variant="h6">Size: 12px</Typography>
@@ -134,8 +134,8 @@ export default function ComponentTypography() {
             <MainCard title="Caption">
               <Stack spacing={1}>
                 <Typography variant="caption">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </Typography>
                 <Breadcrumbs aria-label="breadcrumb">
                   <Typography variant="h6">Size: 12px</Typography>
@@ -145,34 +145,37 @@ export default function ComponentTypography() {
               </Stack>
             </MainCard>
           </Stack>
-        </Grid>
-        <Grid item xs={12} lg={6}>
+        </Grid2>
+        <Grid2 item xs={12} lg={6}>
           <Stack spacing={3}>
             <MainCard title="Alignment">
               <>
                 <Typography variant="body2" gutterBottom>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua.
                 </Typography>
                 <Typography variant="body2" textAlign="center" gutterBottom>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua.
                 </Typography>
                 <Typography variant="body2" textAlign="right">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua.
                 </Typography>
               </>
             </MainCard>
             <MainCard title="Gutter Bottom">
               <>
                 <Typography variant="body1" gutterBottom>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </Typography>
                 <Typography variant="body2" gutterBottom>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </Typography>
                 <Breadcrumbs aria-label="breadcrumb">
                   <Typography variant="h6">Size: 12px</Typography>
@@ -184,8 +187,8 @@ export default function ComponentTypography() {
             <MainCard title="Overline">
               <Stack spacing={1.5}>
                 <Typography variant="overline">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </Typography>
                 <Breadcrumbs aria-label="breadcrumb">
                   <Typography variant="h6">Size: 12px</Typography>
@@ -232,8 +235,9 @@ export default function ComponentTypography() {
             <MainCard title="Paragraph">
               <>
                 <Typography variant="body1" gutterBottom>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                   magna aliqua.
                 </Typography>
                 <Breadcrumbs aria-label="breadcrumb">
@@ -246,12 +250,12 @@ export default function ComponentTypography() {
             <MainCard title="Font Style">
               <>
                 <Typography variant="body1" gutterBottom sx={{ fontStyle: 'italic' }}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </Typography>
                 <Typography variant="subtitle1" gutterBottom sx={{ fontStyle: 'italic' }}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </Typography>
                 <Breadcrumbs aria-label="breadcrumb">
                   <Typography variant="h6">Size: 14px</Typography>
@@ -261,8 +265,8 @@ export default function ComponentTypography() {
               </>
             </MainCard>
           </Stack>
-        </Grid>
-      </Grid>
+        </Grid2>
+      </Grid2>
     </ComponentSkeleton>
   );
 }

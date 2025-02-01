@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 // material-ui
-import Grid from '@mui/material/Grid';
+import Grid2 from '@mui/material/Grid2';
 import Box from '@mui/material/Box';
 
 // project import
@@ -18,12 +18,12 @@ export default function AuthWrapper({ children }) {
   return (
     <Box sx={{ minHeight: '100vh' }}>
       <AuthBackground />
-      <Grid container direction="column" justifyContent="flex-end" sx={{ minHeight: '100vh' }}>
-        <Grid item xs={12} sx={{ ml: 3, mt: 3 }}>
+      <Grid2 container direction="column" justifyContent="flex-end" sx={{ minHeight: '100vh' }}>
+        <Grid2 item xs={12} sx={{ ml: 3, mt: 3 }}>
           <Logo />
-        </Grid>
-        <Grid item xs={12}>
-          <Grid
+        </Grid2>
+        <Grid2 item xs={12}>
+          <Grid2
             item
             xs={12}
             container
@@ -33,19 +33,19 @@ export default function AuthWrapper({ children }) {
               minHeight: {
                 xs: 'calc(100vh - 210px)',
                 sm: 'calc(100vh - 134px)',
-                md: 'calc(100vh - 112px)'
-              }
+                md: 'calc(100vh - 112px)',
+              },
             }}
           >
-            <Grid item>
+            <Grid2 item>
               <AuthCard>{children}</AuthCard>
-            </Grid>
-          </Grid>
-        </Grid>
-        <Grid item xs={12} sx={{ m: 3, mt: 1 }}>
+            </Grid2>
+          </Grid2>
+        </Grid2>
+        <Grid2 item xs={12} sx={{ m: 3, mt: 1 }}>
           <AuthFooter />
-        </Grid>
-      </Grid>
+        </Grid2>
+      </Grid2>
     </Box>
   );
 }

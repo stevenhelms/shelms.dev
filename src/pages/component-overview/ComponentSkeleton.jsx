@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 
 // material-ui
-import Grid from '@mui/material/Grid';
+import Grid2 from '@mui/material/Grid2';
 import Skeleton from '@mui/material/Skeleton';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
@@ -47,40 +47,40 @@ export default function ComponentSkeleton({ children }) {
                 <Skeleton />
               </Typography>
             </Stack>
-            <Grid container spacing={0.75} sx={{ mt: 1.75 }}>
-              <Grid item xs={12}>
+            <Grid2 container spacing={0.75} sx={{ mt: 1.75 }}>
+              <Grid2 item xs={12}>
                 <Typography variant="caption" color="text.secondary">
                   <Stack direction="row" spacing={1}>
                     <Skeleton animation="wave" variant="circular" width={16} height={16} />
                     <Skeleton sx={{ width: { xs: 250, md: 450 } }} />
                   </Stack>
                 </Typography>
-              </Grid>
-              <Grid item xs={12}>
+              </Grid2>
+              <Grid2 item xs={12}>
                 <Typography variant="caption" color="text.secondary">
                   <Stack direction="row" spacing={1}>
                     <Skeleton animation="wave" variant="circular" width={16} height={16} />
                     <Skeleton sx={{ width: { xs: 250, md: 450 } }} />
                   </Stack>
                 </Typography>
-              </Grid>
-            </Grid>
+              </Grid2>
+            </Grid2>
           </Box>
           <ComponentWrapper>
-            <Grid container spacing={3}>
-              <Grid item xs={12} md={6}>
+            <Grid2 container spacing={3}>
+              <Grid2 item xs={12} md={6}>
                 {skeletonCard}
-              </Grid>
-              <Grid item xs={12} md={6}>
+              </Grid2>
+              <Grid2 item xs={12} md={6}>
                 {skeletonCard}
-              </Grid>
-              <Grid item xs={12} md={6}>
+              </Grid2>
+              <Grid2 item xs={12} md={6}>
                 {skeletonCard}
-              </Grid>
-              <Grid item xs={12} md={6}>
+              </Grid2>
+              <Grid2 item xs={12} md={6}>
                 {skeletonCard}
-              </Grid>
-            </Grid>
+              </Grid2>
+            </Grid2>
           </ComponentWrapper>
         </>
       )}
